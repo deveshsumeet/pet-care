@@ -1,0 +1,31 @@
+<div class="wrapper">
+	<div class="header">
+		<div class="overlay">
+			<h1>Make Appointment</h1>
+		</div>
+	</div>
+
+	<div class="inner-wrap" id="innerWrap">
+		<form id="apptFormDetail">
+			<div class="form-group">
+				<label for="aptDateTime">Enter Date and Time (MM/DD/YYYY
+					HH:MM)</label> <input type="text" name="aptDateTime" id="aptDateTime"
+					class="form-control" placeholder="MM/DD/YYYY HH:MM" />
+			</div>
+			<div class="form-group">
+				<label for="petNameDropDown">Pet Name</label> <select
+					id="petNameDropDown" class="form-control" onclick="getPetList()"></select>
+			</div>
+
+			<div class="form-group">
+				<label for="vetNameDropDown">Veterinarian</label> <select
+					id="vetNameDropDown" class="form-control" onclick="getVetList()"></select>
+			</div>
+
+			<div class="form-group">
+				<input class="blueButton" type="button" value="Confirm"
+					onclick="makeAppointment()">
+			</div>
+		</form>
+	</div>
+</div>

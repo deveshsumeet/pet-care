@@ -1,0 +1,25 @@
+<div class="wrapper">
+	<div class="header">
+		<div class="overlay">
+			<h1>Cancel An Appointment</h1>
+		</div>
+	</div>
+
+	<div class="inner-wrap" id="innerWrap">
+		<form id="cancelFormDetail">
+			<div class="form-group">
+				<label for="petNameDropDown">Pet Name</label> <select
+					id="petNameDropDown" class="form-control" onclick="getPetList()"></select>
+			</div>
+			<div class="form-group">
+				<label for="aptDateTime">Select Date and Time</label> <select
+					id="aptDateTime" class="form-control"
+					onclick="getAppointmentList()"></select>
+			</div>
+			<div class="form-group">
+				<input class="blueButton" type="button" value="Cancel Appointment"
+					onclick="cancelAppointment()">
+			</div>
+		</form>
+	</div>
+</div>
